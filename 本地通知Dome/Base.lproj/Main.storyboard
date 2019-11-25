@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="本地通知Dome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEa-RS-LJN">
+                                <rect key="frame" x="143" y="219" width="62" height="30"/>
+                                <state key="normal" title="发送通知"/>
+                                <connections>
+                                    <action selector="pushNotifaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUe-gK-IPl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnX-VV-l3v">
+                                <rect key="frame" x="154" y="338" width="62" height="30"/>
+                                <state key="normal" title="取消发送"/>
+                                <connections>
+                                    <action selector="cancelNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1oP-3W-D7q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYd-ah-2Hi">
+                                <rect key="frame" x="154" y="443" width="62" height="30"/>
+                                <state key="normal" title="查看通知"/>
+                                <connections>
+                                    <action selector="lookNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKV-Hi-eXT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WnX-VV-l3v" firstAttribute="top" secondItem="UEa-RS-LJN" secondAttribute="bottom" constant="89" id="2aY-tw-KL2"/>
+                            <constraint firstItem="WnX-VV-l3v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="KTo-zH-85f"/>
+                            <constraint firstItem="DYd-ah-2Hi" firstAttribute="top" secondItem="WnX-VV-l3v" secondAttribute="bottom" constant="75" id="UD9-Nh-J6y"/>
+                            <constraint firstItem="UEa-RS-LJN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="itE-oN-bzf"/>
+                            <constraint firstItem="UEa-RS-LJN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="qea-xx-S7z"/>
+                            <constraint firstItem="DYd-ah-2Hi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="x2b-wh-pb4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="101"/>
+        </scene>
+    </scenes>
+</document>
